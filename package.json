@@ -1,0 +1,42 @@
+{
+  "name": "userscript-starter",
+  "version": "2.0.0",
+  "description": "A modern, well-structured starter template for creating browser userscripts.",
+  "main": "index.user.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build",
+    "dev": "concurrently \"vite\" \"vite build --watch\"",
+    "format": "prettier --write src/**/*.{js,ts}",
+    "stylelint": "stylelint src/**/*.{js,ts}",
+    "stylelint:fix": "stylelint src/**/*.{js,ts} --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "24.12.4",
+    "@typescript-eslint/eslint-plugin": "^8.59.3",
+    "@typescript-eslint/parser": "^8.59.3",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.39.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-n": "^18.0.1",
+    "eslint-plugin-perfectionist": "^5.9.0",
+    "eslint-plugin-promise": "^7.3.0",
+    "postcss-styled-syntax": "^0.7.1",
+    "prettier": "3.8.3",
+    "sass": "^1.99.0",
+    "stylelint": "^17.11.1",
+    "stylelint-config-clean-order": "^8.0.1",
+    "stylelint-config-standard": "^40.0.0",
+    "stylelint-scss": "^7.1.1",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.13",
+    "vite-plugin-solid": "^2.11.12"
+  },
+  "dependencies": {
+    "solid-js": "^1.9.12"
+  }
+}
