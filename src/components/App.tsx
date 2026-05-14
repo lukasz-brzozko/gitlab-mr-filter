@@ -1,9 +1,5 @@
-import Counter from "@/components/Counter/Counter";
+import Buttons from "@/components/Buttons";
 
 export default function App() {
-  return (
-    <div class="custom-container">
-      <Counter />
-    </div>
-  );
+  return <Buttons />;
 }

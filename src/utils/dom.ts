@@ -1,4 +1,4 @@
-import { IDS, MESSAGES } from "@/constants";
+import { MESSAGES, SELECTORS } from "@/constants";
 
 export const lookForAppContainer = async (): Promise<{
   container: Element;
@@ -8,7 +8,7 @@ export const lookForAppContainer = async (): Promise<{
     let attempt = 0;
 
     const setIntervalId = setInterval(() => {
-      const container = document.getElementById(IDS.container);
+      const container = document.querySelector(SELECTORS.container);
       if (container) {
         clearInterval(setIntervalId);
         window.console.info(

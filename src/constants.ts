@@ -3,7 +3,7 @@ export const IDS = {
 } as const;
 
 export const SELECTORS = {
-  container: `.container`,
+  container: `[data-testid="issuable-search-container"]`,
 } as const;
 
 export const MESSAGES = {
