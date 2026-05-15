@@ -9,7 +9,10 @@ export const lookForAppContainer = async (): Promise<{
 
     const setIntervalId = setInterval(() => {
       const container = document.querySelector(SELECTORS.container);
-      if (container) {
+      const username = globalThis.unsafeWindow?.gon?.current_username;
+      const isReady = container && username;
+
+      if (isReady) {
         clearInterval(setIntervalId);
         window.console.info(
           `%c ${MESSAGES.containerFound}`,

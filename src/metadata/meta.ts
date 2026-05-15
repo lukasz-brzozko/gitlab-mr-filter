@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GitLab MR Filter
 // @namespace    https://github.com/lukasz-brzozko/gitlab-mr-filter
-// @version      0.0.1
+// @version      0.1.0
 // @description  A userscript to filter merge requests on GitLab based on specific criteria.
 // @author       Łukasz Brzózko
 // @match        https://gitlab.com/*/merge_requests*
